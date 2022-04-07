@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -51,8 +52,11 @@ function App() {
           </Container>
         </Box>
         <Box marginTop="0" height="100vh" width="100%">
-          <Container maxWidth="950px">
-            <Contact />
+          <Container maxWidth="950px" >
+            <Stack height="100vh" justifyContent="space-between" paddingY={4}>
+              <Contact />
+              <Footer />
+            </Stack>
           </Container>
         </Box>
       </Box>

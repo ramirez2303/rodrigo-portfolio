@@ -90,7 +90,6 @@ const Home = () => {
                 colorScheme={useColorModeValue("blue", "pink")}
                 leftIcon={<FaFileDownload />}
                 width="180px"
-                color={useColorModeValue("black", "white")}
               >
                 Descargar CV
               </Button>

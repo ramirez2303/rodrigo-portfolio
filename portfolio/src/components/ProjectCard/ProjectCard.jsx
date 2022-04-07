@@ -16,7 +16,7 @@ const ProjectCard = ({ image, title, text, icon, alt }) => {
       <Stack padding={6} spacing={5}>
         <Stack spacing={3}>
           <Heading fontSize="lg" fontWeight="700">{title}</Heading>
-          <Text fontSize="sm" fontWeight="400">{text}</Text>
+          <Text fontSize="sm" fontWeight="400" opacity="0.8">{text}</Text>
         </Stack>
         <Stack direction="row" justifyContent="center">
           <Stack>{icon}</Stack>
