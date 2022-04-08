@@ -8,18 +8,26 @@ import {
   DrawerHeader,
   DrawerOverlay,
   IconButton,
+  Image,
   Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Stack,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import React, { useEffect, useState } from "react";
 
-const Menu = () => {
+import spanish from "./MenuAssets/es.svg";
+import english from "./MenuAssets/gb.svg";
+
+const LeftMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -100,6 +108,40 @@ const Menu = () => {
                   <IconButton icon={<FaGithub />} isRound="true" size="md" />
                 </Link>
               </Stack>
+              <Stack
+                display={{ base: "flex", sm: "flex", md: "none", lg: "none" }}
+                direction="row"
+                alignItems="center"
+                spacing={8}
+              >
+                <Menu>
+                  <MenuButton as={Button} size="sm">
+                    Idioma <ChevronDownIcon />
+                  </MenuButton>
+                  <MenuList>
+                    <MenuItem minH="48px">
+                      <Image
+                        boxSize="2rem"
+                        borderRadius="full"
+                        src={spanish}
+                        alt="spanish flag"
+                        mr="12px"
+                      />
+                      <span>Español</span>
+                    </MenuItem>
+                    <MenuItem minH="40px">
+                      <Image
+                        boxSize="2rem"
+                        borderRadius="full"
+                        src={english}
+                        alt="Gb flag"
+                        mr="12px"
+                      />
+                      <span>English</span>
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </Stack>
             </Stack>
           </DrawerBody>
 
@@ -122,4 +164,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default LeftMenu;

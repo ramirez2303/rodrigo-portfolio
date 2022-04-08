@@ -4,7 +4,7 @@ import { Container, Stack, Box, useColorModeValue } from "@chakra-ui/react";
 
 import ColorMode from "./components/ColorMode";
 import ScrollToTop from "./components/scroll/ScrollToTop";
-import Menu from "./components/Menu/Menu";
+import LeftMenu from "./components/Menu/LeftMenu";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -24,7 +24,7 @@ function App() {
         <Box width="100%" height="100vh">
           <ColorMode />
           <ScrollToTop />
-          <Menu />
+          <LeftMenu />
           <Container
             maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "900px" }}
           >

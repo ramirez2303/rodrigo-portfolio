@@ -48,6 +48,7 @@ const Nav = () => {
         <Link href="#contact">Contacto</Link>
       </Stack>
       <Stack
+        display={{ base: "none", sm: "none", md: "flex", lg: "flex"  }}
         direction="row"
         alignItems="center"
         spacing={4}

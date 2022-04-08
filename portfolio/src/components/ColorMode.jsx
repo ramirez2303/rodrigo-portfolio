@@ -10,12 +10,13 @@ const ColorMode = () => {
     <>
       <IconButton
         position="fixed"
-        right="20px"
+        right={{ base: "10px", sm: "10px", md: "10px", lg: "20px" }}
         top="10px"
         icon={colorMode === "light" ? <FaSun /> : <FaRegMoon />}
         isRound="true"
         size="lg"
         onClick={toggleColorMode}
+        zIndex="999"
       />
     </>
   );

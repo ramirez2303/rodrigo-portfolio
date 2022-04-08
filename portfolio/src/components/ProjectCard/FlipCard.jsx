@@ -13,7 +13,13 @@ const FlipCard = ({ image, alt, deploy, repo }) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <Stack onMouseEnter={handleHover} width="300px">
         <Link>
-          <Image src={image} alt={alt} borderRadius="20px 20px 0 0" width="100%" height="203.172px" />
+          <Image
+            src={image}
+            alt={alt}
+            borderRadius="20px 20px 0 0"
+            width="100%"
+            height="203.172px"
+          />
         </Link>
       </Stack>
 

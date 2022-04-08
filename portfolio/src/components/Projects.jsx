@@ -38,17 +38,17 @@ const Projects = () => {
           repo="https://github.com/ramirez2303/E-commerce-Design-Practice"
           icon={
             <Stack direction="row" spacing={4}>
-              <Tooltip hasArrow label="ReactJS" bg="gray.300" color="black">
+              <Tooltip hasArrow label="HTML" bg="gray.300" color="black">
                 <span>
                   <FaHtml5 size="36px" />
                 </span>
               </Tooltip>
-              <Tooltip hasArrow label="ChakraUI" bg="gray.300" color="black">
+              <Tooltip hasArrow label="CSS" bg="gray.300" color="black">
                 <span>
                   <FaCss3Alt size="36px" />
                 </span>
               </Tooltip>
-              <Tooltip hasArrow label="ChakraUI" bg="gray.300" color="black">
+              <Tooltip hasArrow label="Javascript" bg="gray.300" color="black">
                 <span>
                   <SiJavascript size="36px" />
                 </span>
@@ -82,19 +82,24 @@ const Projects = () => {
           title="Comming soon para pagina de ropa"
           image={project3}
           alt="Project 1 Image - Ratting App"
-          text={`Esta es una pagina de puntaje, basada en el reto de la pagina Frontend Mentor`}
+          text={`Una pagina presentación de un proxima fake e-commerce de ropa, basado en el reto de la pagina Frontend Mentor`}
           deploy="https://ramirez2303.github.io/base-apparel-coming-soon-page-challenge/"
           repo="https://github.com/ramirez2303/base-apparel-coming-soon-page-challenge"
           icon={
             <Stack direction="row" spacing={4} _dark>
-              <Tooltip hasArrow label="ReactJS" bg="gray.300" color="black">
+              <Tooltip hasArrow label="HTML" bg="gray.300" color="black">
                 <span>
-                  <FaReact size="36px" />
+                  <FaHtml5 size="36px" />
                 </span>
               </Tooltip>
-              <Tooltip hasArrow label="ChakraUI" bg="gray.300" color="black">
+              <Tooltip hasArrow label="CSS" bg="gray.300" color="black">
                 <span>
-                  <SiChakraui size="36px" />
+                  <FaCss3Alt size="36px" />
+                </span>
+              </Tooltip>
+              <Tooltip hasArrow label="Javascript" bg="gray.300" color="black">
+                <span>
+                  <SiJavascript size="36px" />
                 </span>
               </Tooltip>
             </Stack>
