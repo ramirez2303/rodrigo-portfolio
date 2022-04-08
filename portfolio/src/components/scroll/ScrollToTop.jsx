@@ -30,8 +30,8 @@ const ScrollToTop = () => {
   return (
     <IconButton
       position="fixed"
-      right="25px"
-      bottom="20px"
+      right="20px"
+      bottom="10px"
       icon={<BiUpArrow />}
       isRound="true"
       size="md"

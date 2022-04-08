@@ -1,15 +1,22 @@
-import { IconButton, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  IconButton,
+  Link,
+  Stack,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import React from "react";
 
 function Footer() {
   return (
     <Stack
-      direction="row"
+      direction={{ base: "column", sm: "row", md: "row", lg: "row" }}
       justifyContent="space-between"
       alignItems="center"
       borderTop={useColorModeValue("1px solid #555", "1px solid")}
       padding="10px 10px 0"
+      maxW="100%"
     >
       <Stack direction="row">
         <Link
@@ -22,8 +29,7 @@ function Footer() {
           <IconButton icon={<FaGithub />} isRound="true" size="sm" />
         </Link>
       </Stack>
-      <Stack>
-      </Stack>
+      <Stack></Stack>
       <Stack direction="row" fontSize="sm" spacing={6}>
         <Link href="#home">Inicio</Link>
         <Link href="#projects">Proyectos</Link>

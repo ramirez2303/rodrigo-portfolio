@@ -20,14 +20,20 @@ const About = () => {
         <Heading>Sobre Mi</Heading>
       </Stack>
       <Stack
-        direction="row"
-        w="900px"
-        height="400px"
+        direction={{
+          base: "column",
+          sm: "column",
+          md: "column",
+          lg: "row",
+        }}
+        w={{ base: "100%", sm: "100%", md: "100%", lg: "900px" }}
+        height={{ base: "", sm: "", md: "", lg: "400px" }}
         alignItems="center"
         justifyContent="space-between"
         borderRadius="25px 0 0 25px"
+        spacing={{ base: "60px" }}
       >
-        <Stack maxW="450px" height="100%" justify="space-around">
+        <Stack maxW={{base:"100%",sm:"100%",md:"100%",lg:"450px"}} height="100%" justify="space-around">
           <Stack
             direction="row"
             divider={
@@ -91,8 +97,8 @@ const About = () => {
               padding=" 0 0 0 20px"
             >
               Hice el secundario en una Escuela Técnica, con la especialidad en
-              Multimedios, con conocimientos como, arte, diseño gráfico, edición
-              de video, programación básica.
+              Multimedios, obteniendo conocimientos como, arte, diseño gráfico,
+              edición de video, programación básica.
             </Text>
           </Stack>
           <Stack

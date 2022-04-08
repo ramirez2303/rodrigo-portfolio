@@ -37,7 +37,7 @@ const Menu = () => {
     window.scrollTo({
       top: 0,
     });
-    onClose()
+    onClose();
   };
 
   useEffect(() => {
@@ -55,9 +55,11 @@ const Menu = () => {
         icon={<HamburgerIcon />}
         onClick={onOpen}
         position="fixed"
-        left="25px"
-        top="20px"
-        opacity={isVisible ? "1" : "0"}
+        left={{ base: "10px", sm: "10px", md: "10px", lg: "20px" }}
+        top="10px"
+        opacity={{ base: 1, sm: 1, md: 1, lg: isVisible ? "1" : "0" }}
+        size="lg"
+        zIndex="999"
       />
       <Drawer
         isOpen={isOpen}
@@ -74,10 +76,18 @@ const Menu = () => {
           <DrawerBody>
             <Stack spacing={7} marginTop={4}>
               <Stack direction="column" fontSize="md" spacing={6}>
-                <Link href="#home" w="fit-content">Inicio</Link>
-                <Link href="#projects" w="fit-content">Proyectos</Link>
-                <Link href="#about" w="fit-content">Sobre mi</Link>
-                <Link href="#contact" w="fit-content">Contacto</Link>
+                <Link href="#home" w="fit-content">
+                  Inicio
+                </Link>
+                <Link href="#projects" w="fit-content">
+                  Proyectos
+                </Link>
+                <Link href="#about" w="fit-content">
+                  Sobre mi
+                </Link>
+                <Link href="#contact" w="fit-content">
+                  Contacto
+                </Link>
               </Stack>
               <Stack direction="row">
                 <Link
@@ -97,7 +107,12 @@ const Menu = () => {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cerrar
             </Button>
-            <Button variant="solid" colorScheme={useColorModeValue("blue", "pink")} mr={3} onClick={scrollTop}>
+            <Button
+              variant="solid"
+              colorScheme={useColorModeValue("blue", "pink")}
+              mr={3}
+              onClick={scrollTop}
+            >
               Inicio
             </Button>
           </DrawerFooter>

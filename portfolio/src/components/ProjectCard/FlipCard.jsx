@@ -2,7 +2,7 @@ import { Button, Image, Link, Stack } from "@chakra-ui/react";
 import { React, useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
-const FlipCard = ({ image, alt }) => {
+const FlipCard = ({ image, alt, deploy, repo }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleHover = () => {
@@ -10,10 +10,10 @@ const FlipCard = ({ image, alt }) => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" >
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <Stack onMouseEnter={handleHover} width="300px">
         <Link>
-          <Image src={image} alt={alt} borderRadius="20px 20px 0 0" />
+          <Image src={image} alt={alt} borderRadius="20px 20px 0 0" width="100%" height="203.172px" />
         </Link>
       </Stack>
 
@@ -27,8 +27,17 @@ const FlipCard = ({ image, alt }) => {
         bgGradient="linear(to-b,blackAlpha.500, transparent)"
       >
         <Stack width="150px">
-          <Button colorScheme="twitter">Ir al sitio</Button>
-          <Button colorScheme="facebook">Ir al repositorio</Button>
+          <Button colorScheme="twitter">
+            <Link href={deploy} target="_blank">
+              Ir al sitio
+            </Link>
+          </Button>
+
+          <Button colorScheme="facebook">
+            <Link href={repo} target="_blank">
+              Ir al repositorio
+            </Link>
+          </Button>
         </Stack>
       </Stack>
     </ReactCardFlip>

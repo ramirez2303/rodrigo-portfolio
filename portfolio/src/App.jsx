@@ -25,7 +25,9 @@ function App() {
           <ColorMode />
           <ScrollToTop />
           <Menu />
-          <Container maxWidth="900px">
+          <Container
+            maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "900px" }}
+          >
             <Stack spacing={12}>
               <Stack position="sticky">
                 <Nav />
@@ -36,8 +38,10 @@ function App() {
             </Stack>
           </Container>
         </Box>
-        <Box marginTop="0" height="100vh" width="100%">
-          <Container maxWidth="900px">
+        <Box marginTop="100px" width="100%">
+          <Container
+            maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "900px" }}
+          >
             <Projects />
           </Container>
         </Box>
@@ -48,13 +52,17 @@ function App() {
           "linear(to-tr, blackAlpha.800, blackAlpha.200)"
         )}
       >
-        <Box marginTop="0" height="100vh" width="100%">
-          <Container maxWidth="900px">
+        <Box marginTop="0" width="100%">
+          <Container
+            maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "900px" }}
+          >
             <About />
           </Container>
         </Box>
-        <Box marginTop="0" height="100vh" width="100%">
-          <Container maxWidth="950px" >
+        <Box marginTop={4} width="100%">
+          <Container
+            maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "950px" }}
+          >
             <Stack height="100vh" justifyContent="space-between" paddingY={4}>
               <Contact />
               <Footer />

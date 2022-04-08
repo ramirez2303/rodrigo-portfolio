@@ -10,8 +10,8 @@ const ColorMode = () => {
     <>
       <IconButton
         position="fixed"
-        right="25px"
-        top="20px"
+        right="20px"
+        top="10px"
         icon={colorMode === "light" ? <FaSun /> : <FaRegMoon />}
         isRound="true"
         size="lg"
