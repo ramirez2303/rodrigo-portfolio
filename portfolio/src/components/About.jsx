@@ -33,7 +33,11 @@ const About = () => {
         borderRadius="25px 0 0 25px"
         spacing={{ base: "60px" }}
       >
-        <Stack maxW={{base:"100%",sm:"100%",md:"100%",lg:"450px"}} height="100%" justify="space-around">
+        <Stack
+          maxW={{ base: "100%", sm: "100%", md: "100%", lg: "450px" }}
+          height="100%"
+          justify="space-around"
+        >
           <Stack
             direction="row"
             divider={
@@ -42,7 +46,12 @@ const About = () => {
               />
             }
           >
-            <Text fontWeight="700" padding=" 0 10px 0 0" width="150px">
+            <Text
+              fontWeight="700"
+              fontSize={{ base: "xs", sm: "xs", md: "xs", lg: "md" }}
+              padding=" 0 10px 0 0"
+              width="150px"
+            >
               Tecnologías y Lenguajes
             </Text>
             <Text
@@ -64,7 +73,12 @@ const About = () => {
               />
             }
           >
-            <Text fontWeight="700" padding=" 0 10px 0 0" width="150px">
+            <Text
+              fontWeight="700"
+              fontSize={{ base: "xs", sm: "xs", md: "xssxsm", lg: "md" }}
+              padding=" 0 10px 0 0"
+              width="150px"
+            >
               Programación
             </Text>
             <Text
@@ -86,7 +100,12 @@ const About = () => {
               />
             }
           >
-            <Text fontWeight="700" padding=" 0 10px 0 0" width="150px">
+            <Text
+              fontWeight="700"
+              fontSize={{ base: "xs", sm: "xs", md: "xs", lg: "md" }}
+              padding=" 0 10px 0 0"
+              width="150px"
+            >
               Estudio
             </Text>
             <Text
@@ -109,7 +128,12 @@ const About = () => {
               />
             }
           >
-            <Text fontWeight="700" padding=" 0 10px 0 0" width="150px">
+            <Text
+              fontWeight="700"
+              fontSize={{ base: "xs", sm: "xs", md: "xs", lg: "md" }}
+              padding=" 0 10px 0 0"
+              width="150px"
+            >
               Yo
             </Text>
             <Text

@@ -20,6 +20,7 @@ function App() {
           "linear(to-br, blue.100, blackAlpha.200)",
           "linear(to-br, blackAlpha.800, blackAlpha.200)"
         )}
+        height="100%"
       >
         <Box width="100%" height="100vh">
           <ColorMode />
@@ -51,6 +52,7 @@ function App() {
           "linear(to-tr, blue.100, blackAlpha.200)",
           "linear(to-tr, blackAlpha.800, blackAlpha.200)"
         )}
+        height="100%"
       >
         <Box marginTop="0" width="100%">
           <Container
@@ -63,7 +65,7 @@ function App() {
           <Container
             maxWidth={{ base: "100%", sm: "100%", md: "100%", lg: "950px" }}
           >
-            <Stack height="100vh" justifyContent="space-between" paddingY={4}>
+            <Stack justifyContent="space-between" paddingY={4}>
               <Contact />
               <Footer />
             </Stack>

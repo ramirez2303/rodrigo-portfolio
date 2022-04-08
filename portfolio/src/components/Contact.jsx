@@ -55,8 +55,20 @@ const Contact = () => {
       <Stack alignItems="center">
         <Heading>Estemos en contacto</Heading>
       </Stack>
-      <Stack direction="row" justifyContent="space-around" alignItems="center">
-        <Stack width="400px" spacing={6}>
+      <Stack
+        direction={{
+          base: "column",
+          sm: "column",
+          md: "column",
+          lg: "row",
+        }}
+        justifyContent="space-around"
+        alignItems="center"
+      >
+        <Stack
+          width={{ base: "100%", sm: "100%", md: "100%", lg: "400px" }}
+          spacing={6}
+        >
           <form ref={form} onSubmit={sendEmail}>
             <Stack spacing={8}>
               <Stack>
@@ -148,7 +160,7 @@ const Contact = () => {
                 variant={useColorModeValue("solid", "outline")}
                 type="submit"
               >
-                Submit
+                Enviar
               </Button>
             </Stack>
           </form>
