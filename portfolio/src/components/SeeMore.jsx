@@ -5,31 +5,52 @@ import {
   Tooltip,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+import { motion } from "framer-motion";
+
 import React from "react";
 
-import { BsPlusCircle } from "react-icons/bs";
+import { BsArrowLeftCircle } from "react-icons/bs";
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiChakraui, SiJavascript } from "react-icons/si";
 
 import ProjectCard from "./ProjectCard/ProjectCard";
-import GoAboutArrow from "../components/GoDownArrow/GoAboutArrow";
 
 import project1 from "../image/e-commerce.jpeg";
 import project2 from "../image/rating-app.jpeg";
 import project3 from "../image/coming-soon.jpeg";
-
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const SeeMore = () => {
   return (
-    <Stack id="projects" alignItems="center" spacing={16}>
-      <Heading marginTop="20px">Proyectos</Heading>
+    <Stack alignItems="center" width="100%" height="100%" spacing={16}>
+      <Stack paddingY={{ base: "4", sm: "4", md: "4", lg: "0" }}>
+        <Button
+          leftIcon={<BsArrowLeftCircle />}
+          colorScheme={useColorModeValue("blue", "pink")}
+          variant={useColorModeValue("solid", "outline")}
+          position={{
+            base: "initial",
+            sm: "initial",
+            md: "initial",
+            lg: "absolute",
+          }}
+          left="25px"
+          top="12px"
+        >
+          <Link to="/">Volver</Link>
+        </Button>
+        <Heading>Proyectos</Heading>
+      </Stack>
       <Stack
+        as={motion.div}
         alignItems="center"
         justifyContent="space-between"
         direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
         gap={10}
         textAlign="center"
+        animate={{ y: [-500, 200, 0], x: 0 }}
+        transition={{ duration: 1 }}
       >
         <ProjectCard
           title="E-commerce sneakers"
@@ -108,18 +129,8 @@ const Projects = () => {
           }
         />
       </Stack>
-      <Stack spacing={10}>
-        <Button
-          leftIcon={<BsPlusCircle />}
-          colorScheme={useColorModeValue("blue", "pink")}
-          variant={useColorModeValue("solid", "outline")}
-        >
-          <Link to="/SeeMore">Ver Mas</Link>
-        </Button>
-        <GoAboutArrow />
-      </Stack>
     </Stack>
   );
 };
 
-export default Projects;
+export default SeeMore;

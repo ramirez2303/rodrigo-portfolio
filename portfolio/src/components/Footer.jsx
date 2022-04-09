@@ -2,7 +2,6 @@ import {
   IconButton,
   Link,
   Stack,
-  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";

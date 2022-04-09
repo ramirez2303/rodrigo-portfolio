@@ -24,7 +24,7 @@ const ProjectCard = ({ image, title, text, icon, alt, deploy, repo }) => {
           <Heading fontSize="md" fontWeight="700">
             {title}
           </Heading>
-          <Text oadi fontSize="xs" fontWeight="400" opacity="0.8">
+          <Text fontSize="xs" fontWeight="400" opacity="0.8">
             {text}
           </Text>
         </Stack>

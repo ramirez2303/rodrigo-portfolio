@@ -18,11 +18,14 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import React, { useEffect, useState } from "react";
+
+import SeeMoreMenu from "./SeeMoreMenu";
 
 import spanish from "./MenuAssets/es.svg";
 import english from "./MenuAssets/gb.svg";
@@ -87,9 +90,14 @@ const LeftMenu = () => {
                 <Link href="#home" w="fit-content">
                   Inicio
                 </Link>
-                <Link href="#projects" w="fit-content">
-                  Proyectos
-                </Link>
+                <Stack spacing={4}>
+                  <Link href="#projects" w="fit-content">
+                    Proyectos:
+                  </Link>
+                  <Stack>
+                    <SeeMoreMenu />
+                  </Stack>
+                </Stack>
                 <Link href="#about" w="fit-content">
                   Sobre mi
                 </Link>

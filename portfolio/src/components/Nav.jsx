@@ -14,6 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
+
 import spanish from "../image/es.svg";
 import english from "../image/gb.svg";
 
@@ -45,10 +46,10 @@ const Nav = () => {
         <Link href="#home">Inicio</Link>
         <Link href="#projects">Proyectos</Link>
         <Link href="#about">Sobre mi</Link>
-        <Link href="#contact">Contacto</Link>
+        <Link href="#contact">Contacto</Link>q
       </Stack>
       <Stack
-        display={{ base: "none", sm: "none", md: "flex", lg: "flex"  }}
+        display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
         direction="row"
         alignItems="center"
         spacing={4}
