@@ -5,10 +5,24 @@ import { BsPlusCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const SeeMoreMenu = () => {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
-    <Stack direction="row" alignItems="center" fontSize="sm" fontWeight="400" opacity="0.7" ml="30px">
+    <Stack
+      direction="row"
+      alignItems="center"
+      fontSize="sm"
+      fontWeight="400"
+      opacity="0.7"
+      ml="30px"
+    >
       <BsPlusCircle />
-      <Link to="/SeeMore">Ver Mas</Link>
+      <Link to="/SeeMore" onClick={scrollTop}>
+        Ver Mas
+      </Link>
     </Stack>
   );
 };

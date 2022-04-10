@@ -4,7 +4,7 @@ import { Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 
 import FlipCard from "./FlipCard";
 
-const ProjectCard = ({ image, title, text, icon, alt, deploy, repo }) => {
+const ProjectCard = ({ id, image, title, text, icon, alt, deploy, repo }) => {
   const color = useColorModeValue(
     "linear(to-bl, blue.500, blue.200)",
     "linear(to-br, #7928CA, #FF0080)"
@@ -12,6 +12,7 @@ const ProjectCard = ({ image, title, text, icon, alt, deploy, repo }) => {
 
   return (
     <Stack
+      id={id}
       w="300px"
       h="403px"
       spacing={0}

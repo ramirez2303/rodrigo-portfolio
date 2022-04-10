@@ -21,6 +21,12 @@ import project3 from "../image/coming-soon.jpeg";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <Stack id="projects" alignItems="center" spacing={16}>
       <Heading marginTop="20px">Proyectos</Heading>
@@ -114,7 +120,9 @@ const Projects = () => {
           colorScheme={useColorModeValue("blue", "pink")}
           variant={useColorModeValue("solid", "outline")}
         >
-          <Link to="/SeeMore">Ver Mas</Link>
+          <Link to="/SeeMore" onClick={scrollTop}>
+            Ver Mas
+          </Link>
         </Button>
         <GoAboutArrow />
       </Stack>

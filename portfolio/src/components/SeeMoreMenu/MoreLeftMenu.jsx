@@ -15,6 +15,7 @@ import {
   MenuItem,
   MenuList,
   Stack,
+  Text,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -25,12 +26,10 @@ import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import React, { useEffect, useState } from "react";
 
-import SeeMoreMenu from "./SeeMoreMenu";
+import spanish from "../Menu/MenuAssets/es.svg";
+import english from "../Menu/MenuAssets/gb.svg";
 
-import spanish from "./MenuAssets/es.svg";
-import english from "./MenuAssets/gb.svg";
-
-const LeftMenu = () => {
+const MoreLeftMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -63,6 +62,7 @@ const LeftMenu = () => {
     <>
       <IconButton
         ref={btnRef}
+        display={{ base: "flex", sm: "flex", md: "flex", lg: "none" }}
         icon={<HamburgerIcon />}
         onClick={onOpen}
         position="fixed"
@@ -82,27 +82,31 @@ const LeftMenu = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Navegacion</DrawerHeader>
+          <DrawerHeader>Navegación</DrawerHeader>
 
           <DrawerBody>
             <Stack spacing={7} marginTop={4}>
-              <Stack direction="column" fontSize="md" opacity="0.8" spacing={6}>
-                <Link href="#home" w="fit-content">
-                  Inicio
+              <Text>Proyectos:</Text>
+              <Stack direction="column" fontSize="sm" opacity="0.8" spacing={6}>
+                <Link href="#project1" w="fit-content">
+                  E-commerce sneakers
                 </Link>
                 <Stack spacing={4}>
-                  <Link href="#projects" w="fit-content">
-                    Proyectos:
+                  <Link href="#project2" w="fit-content">
+                    Rating App
                   </Link>
-                  <Stack>
-                    <SeeMoreMenu />
-                  </Stack>
                 </Stack>
-                <Link href="#about" w="fit-content">
-                  Sobre mi
+                <Link href="#project3" w="fit-content">
+                  Comming soon para pagina de ropa
                 </Link>
-                <Link href="#contact" w="fit-content">
-                  Contacto
+                <Link href="#project4" w="fit-content">
+                  Chat App Ilustración en CSS
+                </Link>
+                <Link href="#project5" w="fit-content">
+                  Huddle Landing Page
+                </Link>
+                <Link href="#project6" w="fit-content">
+                  Suscripción App de música
                 </Link>
               </Stack>
               <Stack direction="row">
@@ -172,4 +176,4 @@ const LeftMenu = () => {
   );
 };
 
-export default LeftMenu;
+export default MoreLeftMenu;
