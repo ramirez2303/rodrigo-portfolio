@@ -21,12 +21,12 @@ import ColorMode from "./ColorMode";
 import ScrollToTop from "./scroll/ScrollToTop";
 import MoreLeftMenu from "./SeeMoreMenu/MoreLeftMenu";
 
-import project1 from "../image/e-commerce.jpeg";
-import project2 from "../image/rating-app.jpeg";
-import project3 from "../image/coming-soon.jpeg";
-import project4 from "../image/chat.png";
-import project5 from "../image/huddle.png";
-import project6 from "../image/order.png";
+import project1 from "../Spanish/image/e-commerce.jpeg";
+import project2 from "../Spanish/image/rating-app.jpeg";
+import project3 from "../Spanish/image/coming-soon.jpeg";
+import project4 from "../Spanish/image/chat.png";
+import project5 from "../Spanish/image/huddle.png";
+import project6 from "../Spanish/image/order.png";
 import { Link } from "react-router-dom";
 
 const SeeMore = () => {

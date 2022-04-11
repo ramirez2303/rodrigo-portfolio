@@ -12,11 +12,11 @@ import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiChakraui, SiJavascript } from "react-icons/si";
 
 import ProjectCard from "./ProjectCard/ProjectCard";
-import GoAboutArrow from "../components/GoDownArrow/GoAboutArrow";
+import GoAboutArrow from "../Spanish/GoDownArrow/GoAboutArrow";
 
-import project1 from "../image/e-commerce.jpeg";
-import project2 from "../image/rating-app.jpeg";
-import project3 from "../image/coming-soon.jpeg";
+import project1 from "../Spanish/image/e-commerce.jpeg";
+import project2 from "../Spanish/image/rating-app.jpeg";
+import project3 from "../Spanish/image/coming-soon.jpeg";
 
 import { Link } from "react-router-dom";
 

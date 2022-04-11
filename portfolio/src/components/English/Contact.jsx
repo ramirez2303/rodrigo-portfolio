@@ -19,7 +19,7 @@ import emailjs from "@emailjs/browser";
 import { init } from "@emailjs/browser";
 init("EumWhZTrl4AIpVIWm");
 
-import contactImage from "../image/talking-svgrepo-com.svg";
+import contactImage from "../Spanish/image/talking-svgrepo-com.svg";
 
 import Result from "./ContactResult/Result";
 

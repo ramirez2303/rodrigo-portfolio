@@ -19,6 +19,9 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+import SpanishButton from "../LanguageLinks/SpanishButton";
+import EnglishButton from "../LanguageLinks/EnglishButton";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
@@ -117,7 +120,6 @@ const LeftMenu = () => {
                 </Link>
               </Stack>
               <Stack
-                display={{ base: "flex", sm: "flex", md: "none", lg: "none" }}
                 direction="row"
                 alignItems="center"
                 spacing={8}
@@ -128,24 +130,10 @@ const LeftMenu = () => {
                   </MenuButton>
                   <MenuList>
                     <MenuItem minH="48px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={spanish}
-                        alt="spanish flag"
-                        mr="12px"
-                      />
-                      <span>Español</span>
+                      <SpanishButton spanish={spanish} />
                     </MenuItem>
                     <MenuItem minH="40px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={english}
-                        alt="Gb flag"
-                        mr="12px"
-                      />
-                      <span>English</span>
+                      <EnglishButton english={english} />
                     </MenuItem>
                   </MenuList>
                 </Menu>

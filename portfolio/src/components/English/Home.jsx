@@ -15,14 +15,14 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 
-import GoProjectsArrow from "../components/GoDownArrow/GoProjectsArrow";
+import GoProjectsArrow from "../Spanish/GoDownArrow/GoProjectsArrow";
 
-import html5Icon from "../image/html5-svgrepo-com.svg";
-import cssIcon from "../image/css-3-svgrepo-com.svg";
-import jsIcon from "../image/javascript-svgrepo-com.svg";
-import gitIcon from "../image/git-svgrepo-com.svg";
-import reactIcon from "../image/react-svgrepo-com.svg";
-import avatar from "../image/avatar.png";
+import html5Icon from "../Spanish/image/html5-svgrepo-com.svg";
+import cssIcon from "../Spanish/image/css-3-svgrepo-com.svg";
+import jsIcon from "../Spanish/image/javascript-svgrepo-com.svg";
+import gitIcon from "../Spanish/image/git-svgrepo-com.svg";
+import reactIcon from "../Spanish/image/react-svgrepo-com.svg";
+import avatar from "../Spanish/image/avatar.png";
 
 const Home = () => {
   return (

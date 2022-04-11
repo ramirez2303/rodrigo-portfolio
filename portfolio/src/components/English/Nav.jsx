@@ -14,9 +14,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
+import SpanishButton from "../Spanish/LanguageLinks/SpanishButton";
+import EnglishButton from "../Spanish/LanguageLinks/EnglishButton";
 
-import spanish from "../image/es.svg";
-import english from "../image/gb.svg";
+import spanish from "../Spanish/image/es.svg";
+import english from "../Spanish/image/gb.svg";
 
 const Nav = () => {
   return (
@@ -62,24 +64,10 @@ const Nav = () => {
           </MenuButton>
           <MenuList>
             <MenuItem minH="48px">
-              <Image
-                boxSize="2rem"
-                borderRadius="full"
-                src={spanish}
-                alt="spanish flag"
-                mr="12px"
-              />
-              <span>Español</span>
+              <SpanishButton spanish={spanish} />
             </MenuItem>
             <MenuItem minH="40px">
-              <Image
-                boxSize="2rem"
-                borderRadius="full"
-                src={english}
-                alt="Gb flag"
-                mr="12px"
-              />
-              <span>English</span>
+              <EnglishButton english={english} />
             </MenuItem>
           </MenuList>
         </Menu>

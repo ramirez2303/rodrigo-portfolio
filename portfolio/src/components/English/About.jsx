@@ -11,7 +11,7 @@ import {
 
 import GoDownArrow from "./GoDownArrow/GoContactArrow";
 
-import avatar2 from "../image/avatar2.jpg";
+import avatar2 from "../Spanish/image/avatar2.jpg";
 
 const About = () => {
   return (
