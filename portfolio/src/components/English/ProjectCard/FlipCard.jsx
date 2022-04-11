@@ -35,13 +35,13 @@ const FlipCard = ({ image, alt, deploy, repo }) => {
         <Stack width="150px">
           <Button colorScheme="twitter">
             <Link href={deploy} target="_blank">
-              Ir al sitio
+              Go to the site
             </Link>
           </Button>
 
           <Button colorScheme="facebook">
             <Link href={repo} target="_blank">
-              Ir al repositorio
+              Go to repository
             </Link>
           </Button>
         </Stack>

@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <Stack id="projects" alignItems="center" spacing={16}>
-      <Heading marginTop="20px">Proyectos</Heading>
+      <Heading marginTop="20px">Projects</Heading>
       <Stack
         alignItems="center"
         justifyContent="space-between"
@@ -41,7 +41,7 @@ const Projects = () => {
           title="E-commerce sneakers"
           image={project1}
           alt="Project 1 Image - E-commerce sneakers"
-          text={`Esta es una fake e-commerce de zapatillas, es solo diseño no es funcional`}
+          text={`This is a fake sneakers e-commerce, is only design, non functional`}
           deploy="https://ramirez2303.github.io/E-commerce-Design-Practice/"
           repo="https://github.com/ramirez2303/E-commerce-Design-Practice"
           icon={
@@ -68,7 +68,7 @@ const Projects = () => {
           title="Rating App"
           image={project2}
           alt="Project 2 Image - Ratting App"
-          text={`Esta es una pagina de puntuación, basada en el reto de la pagina Frontend Mentor`}
+          text={`This is a rating page, based in the challenge of Frontend Mentor`}
           deploy="https://rating-app-frontend-mentor.vercel.app/"
           repo="https://github.com/ramirez2303/rating-app"
           icon={
@@ -87,10 +87,10 @@ const Projects = () => {
           }
         />
         <ProjectCard
-          title="Comming soon para pagina de ropa"
+          title="Comming soon for a fake e-commerce"
           image={project3}
-          alt="Project 1 Image - Ratting App"
-          text={`Una pagina presentación de un proxima fake e-commerce de ropa, basado en el reto de la pagina Frontend Mentor`}
+          alt="Project 3 Image - E-commerce coming soon"
+          text={`A page presentation of a fake e-commerce of clothing, based on the challenge of Frontend Mentor`}
           deploy="https://ramirez2303.github.io/base-apparel-coming-soon-page-challenge/"
           repo="https://github.com/ramirez2303/base-apparel-coming-soon-page-challenge"
           icon={
@@ -120,8 +120,8 @@ const Projects = () => {
           colorScheme={useColorModeValue("blue", "pink")}
           variant={useColorModeValue("solid", "outline")}
         >
-          <Link to="/SeeMore" onClick={scrollTop}>
-            Ver Mas
+          <Link to="/SeeMoreEn" onClick={scrollTop}>
+            See More
           </Link>
         </Button>
         <GoAboutArrow />

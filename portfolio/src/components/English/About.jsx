@@ -17,7 +17,7 @@ const About = () => {
   return (
     <Stack id="about" spacing={20} padding={4} alignItems="center">
       <Stack alignItems="center" marginTop={10}>
-        <Heading>Sobre Mi</Heading>
+        <Heading>About Me</Heading>
       </Stack>
       <Stack
         direction={{
@@ -52,7 +52,7 @@ const About = () => {
               padding=" 0 10px 0 0"
               width="150px"
             >
-              Tecnologías y Lenguajes
+              Technologies and Languages
             </Text>
             <Text
               width="300px"
@@ -79,7 +79,7 @@ const About = () => {
               padding=" 0 10px 0 0"
               width="150px"
             >
-              Programación
+              Programing
             </Text>
             <Text
               width="300px"
@@ -88,7 +88,7 @@ const About = () => {
               fontWeight="400"
               padding=" 0 0 0 20px"
             >
-              Realice cursos de Udemy de HTML, CSS y Javascript, Responsive
+              I made a course in Udemy of HTML, CSS y Javascript, Responsive
               Design en freeCodeCamp.
             </Text>
           </Stack>
@@ -106,7 +106,7 @@ const About = () => {
               padding=" 0 10px 0 0"
               width="150px"
             >
-              Estudio
+              Study
             </Text>
             <Text
               width="300px"
@@ -115,9 +115,9 @@ const About = () => {
               fontWeight="400"
               padding=" 0 0 0 20px"
             >
-              Hice el secundario en una Escuela Técnica, con la especialidad en
-              Multimedios, obteniendo conocimientos como, arte, diseño gráfico,
-              edición de video, programación básica.
+              I did high school in a Technical School, with a specialty in
+              Multimedia, obtaining knowledge such as art, graphic design, video
+              editing, basic programming.
             </Text>
           </Stack>
           <Stack
@@ -134,7 +134,7 @@ const About = () => {
               padding=" 0 10px 0 0"
               width="150px"
             >
-              Yo
+              Me
             </Text>
             <Text
               width="300px"
@@ -143,8 +143,8 @@ const About = () => {
               fontWeight="400"
               padding=" 0 0 0 20px"
             >
-              Soy Rodrigo Exequiel Ramírez, tengo 20 años y vivo en Balcarce,
-              Provincia de Buenos Aires, Argentina.
+              I am Rodrigo Exequiel Ramírez, I am 20 years old and I live in
+              Balcarce, Province of Buenos Aires, Argentina.
             </Text>
           </Stack>
         </Stack>

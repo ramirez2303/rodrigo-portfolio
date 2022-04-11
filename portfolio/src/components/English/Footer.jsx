@@ -30,10 +30,10 @@ function Footer() {
       </Stack>
       <Stack></Stack>
       <Stack direction="row" fontSize="sm" spacing={6}>
-        <Link href="#home">Inicio</Link>
-        <Link href="#projects">Proyectos</Link>
-        <Link href="#about">Sobre mi</Link>
-        <Link href="#contact">Contacto</Link>
+        <Link href="#home">Home</Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#about">About me</Link>
+        <Link href="#contact">Contact</Link>
       </Stack>
     </Stack>
   );

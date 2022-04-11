@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-  Container,
-  Stack,
-  Box,
-  useColorModeValue,
-  Text,
-} from "@chakra-ui/react";
+import { Container, Stack, Box, useColorModeValue } from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
 
@@ -42,7 +36,6 @@ const English = () => {
             <Stack spacing={12}>
               <Stack position="sticky">
                 <Nav />
-                <Text>asñfjaslñf</Text>
               </Stack>
               <Stack>
                 <Home />

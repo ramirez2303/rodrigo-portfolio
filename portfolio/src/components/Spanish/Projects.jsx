@@ -120,7 +120,7 @@ const Projects = () => {
           colorScheme={useColorModeValue("blue", "pink")}
           variant={useColorModeValue("solid", "outline")}
         >
-          <Link to="/SeeMore" onClick={scrollTop}>
+          <Link to="/SeeMoreEs" onClick={scrollTop}>
             Ver Mas
           </Link>
         </Button>

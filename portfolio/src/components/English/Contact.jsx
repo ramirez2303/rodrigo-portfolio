@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <Stack id="contact" justifyContent="space-around" spacing={20}>
       <Stack alignItems="center">
-        <Heading>Estemos en contacto</Heading>
+        <Heading>Get in touch</Heading>
       </Stack>
       <Stack
         direction={{
@@ -72,7 +72,7 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <Stack spacing={8}>
               <Stack>
-                <FormLabel>Nombre Completo</FormLabel>
+                <FormLabel>Full Name</FormLabel>
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents="none"
@@ -116,7 +116,7 @@ const Contact = () => {
                     )}
                   />
                 </InputGroup>
-                <FormLabel>Numero de teléfono</FormLabel>
+                <FormLabel>Phone Number</FormLabel>
                 <InputGroup>
                   <InputLeftElement
                     pointerEvents="none"
@@ -138,7 +138,7 @@ const Contact = () => {
                     )}
                   />
                 </InputGroup>
-                <FormLabel marginY={2}>Mensaje</FormLabel>
+                <FormLabel marginY={2}>Message</FormLabel>
                 <Textarea
                   name="message"
                   required
@@ -160,7 +160,7 @@ const Contact = () => {
                 variant={useColorModeValue("solid", "outline")}
                 type="submit"
               >
-                Enviar
+                Submit
               </Button>
             </Stack>
           </form>

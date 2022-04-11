@@ -28,6 +28,8 @@ import React, { useEffect, useState } from "react";
 
 import spanish from "../Menu/MenuAssets/es.svg";
 import english from "../Menu/MenuAssets/gb.svg";
+import SpanishButton from "../LanguageLinks/SpanishButton";
+import EnglishButton from "../LanguageLinks/EnglishButton";
 
 const MoreLeftMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -82,11 +84,11 @@ const MoreLeftMenu = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Navegación</DrawerHeader>
+          <DrawerHeader>Navigation</DrawerHeader>
 
           <DrawerBody>
             <Stack spacing={7} marginTop={4}>
-              <Text>Proyectos:</Text>
+              <Text>Projects:</Text>
               <Stack direction="column" fontSize="sm" opacity="0.8" spacing={6}>
                 <Link href="#project1" w="fit-content">
                   E-commerce sneakers
@@ -97,16 +99,16 @@ const MoreLeftMenu = () => {
                   </Link>
                 </Stack>
                 <Link href="#project3" w="fit-content">
-                  Comming soon para pagina de ropa
+                  Comming soon E-commerce
                 </Link>
                 <Link href="#project4" w="fit-content">
-                  Chat App Ilustración en CSS
+                  Chat App Ilustration in CSS
                 </Link>
                 <Link href="#project5" w="fit-content">
                   Huddle Landing Page
                 </Link>
                 <Link href="#project6" w="fit-content">
-                  Suscripción App de música
+                  Subscription Music App
                 </Link>
               </Stack>
               <Stack direction="row">
@@ -120,46 +122,12 @@ const MoreLeftMenu = () => {
                   <IconButton icon={<FaGithub />} isRound="true" size="md" />
                 </Link>
               </Stack>
-              <Stack
-                display={{ base: "flex", sm: "flex", md: "none", lg: "none" }}
-                direction="row"
-                alignItems="center"
-                spacing={8}
-              >
-                <Menu>
-                  <MenuButton as={Button} size="sm">
-                    Idioma <ChevronDownIcon />
-                  </MenuButton>
-                  <MenuList>
-                    <MenuItem minH="48px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={spanish}
-                        alt="spanish flag"
-                        mr="12px"
-                      />
-                      <span>Español</span>
-                    </MenuItem>
-                    <MenuItem minH="40px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={english}
-                        alt="Gb flag"
-                        mr="12px"
-                      />
-                      <span>English</span>
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
-              </Stack>
             </Stack>
           </DrawerBody>
 
           <DrawerFooter>
             <Button variant="outline" mr={3} onClick={onClose}>
-              Cerrar
+              Close
             </Button>
             <Button
               variant="solid"
@@ -167,7 +135,7 @@ const MoreLeftMenu = () => {
               mr={3}
               onClick={scrollTop}
             >
-              Inicio
+              Home
             </Button>
           </DrawerFooter>
         </DrawerContent>

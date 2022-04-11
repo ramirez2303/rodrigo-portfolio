@@ -20,8 +20,8 @@ const SeeMoreMenu = () => {
       ml="30px"
     >
       <BsPlusCircle />
-      <Link to="/SeeMore" onClick={scrollTop}>
-        Ver Mas
+      <Link to="/SeeMoreEn" onClick={scrollTop}>
+        See More
       </Link>
     </Stack>
   );

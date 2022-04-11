@@ -45,10 +45,10 @@ const Nav = () => {
         spacing="26px"
         display={{ base: "none", sm: "none", md: "none", lg: "flex" }}
       >
-        <Link href="#home">Inicio</Link>
-        <Link href="#projects">Proyectos</Link>
-        <Link href="#about">Sobre mi</Link>
-        <Link href="#contact">Contacto</Link>q
+        <Link href="#home">Home</Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#about">About me</Link>
+        <Link href="#contact">Contact</Link>q
       </Stack>
       <Stack
         display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}

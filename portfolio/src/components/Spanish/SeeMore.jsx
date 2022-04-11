@@ -62,7 +62,7 @@ const SeeMore = () => {
               left="25px"
               top="12px"
             >
-              <Link to="/">Volver</Link>
+              <Link to="/spanish">Volver</Link>
             </Button>
             <Heading>Proyectos</Heading>
           </Stack>

@@ -5,7 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Spanish from "./components/Spanish";
 import English from "./components/English";
-import SeeMore from "./components/Spanish/SeeMore";
+import SeeMoreEs from "./components/Spanish/SeeMore";
+import SeeMoreEn from "./components/English/SeeMore"
+
 import theme from "./theme";
 
 ReactDOM.render(
@@ -17,7 +19,8 @@ ReactDOM.render(
           <Route path="/" element={<App />}></Route>
           <Route path="/spanish" element={<Spanish />} />
           <Route path="/english" element={<English />} />
-          <Route path="/SeeMore" element={<SeeMore />} />
+          <Route path="/SeeMoreEs" element={<SeeMoreEs />} />
+          <Route path="/SeeMoreEn" element={<SeeMoreEn />} />
         </Routes>
       </ChakraProvider>
     </BrowserRouter>

@@ -85,27 +85,27 @@ const LeftMenu = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Navegacion</DrawerHeader>
+          <DrawerHeader>Navigation</DrawerHeader>
 
           <DrawerBody>
             <Stack spacing={7} marginTop={4}>
               <Stack direction="column" fontSize="md" opacity="0.8" spacing={6}>
                 <Link href="#home" w="fit-content">
-                  Inicio
+                  Home
                 </Link>
                 <Stack spacing={4}>
                   <Link href="#projects" w="fit-content">
-                    Proyectos:
+                    Projects:
                   </Link>
                   <Stack>
                     <SeeMoreMenu />
                   </Stack>
                 </Stack>
                 <Link href="#about" w="fit-content">
-                  Sobre mi
+                  About me
                 </Link>
                 <Link href="#contact" w="fit-content">
-                  Contacto
+                  Contact
                 </Link>
               </Stack>
               <Stack direction="row">
@@ -122,7 +122,7 @@ const LeftMenu = () => {
               <Stack direction="row" alignItems="center" spacing={8}>
                 <Menu>
                   <MenuButton as={Button} size="sm">
-                    Idioma <ChevronDownIcon />
+                    Language <ChevronDownIcon />
                   </MenuButton>
                   <MenuList>
                     <MenuItem minH="48px">
@@ -139,7 +139,7 @@ const LeftMenu = () => {
 
           <DrawerFooter>
             <Button variant="outline" mr={3} onClick={onClose}>
-              Cerrar
+              Close
             </Button>
             <Button
               variant="solid"
@@ -147,7 +147,7 @@ const LeftMenu = () => {
               mr={3}
               onClick={scrollTop}
             >
-              Inicio
+              Home
             </Button>
           </DrawerFooter>
         </DrawerContent>
