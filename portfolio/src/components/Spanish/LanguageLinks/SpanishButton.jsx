@@ -2,6 +2,7 @@ import React from "react";
 
 import { Image, Stack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { ViewIcon } from "@chakra-ui/icons";
 
 const SpanishButton = ({ spanish }) => {
   const scrollTop = () => {
@@ -24,7 +25,10 @@ const SpanishButton = ({ spanish }) => {
           alt="spanish flag"
           mr="12px"
         />
-        <span>Español</span>
+        <span>
+          Español 
+        </span>
+        <ViewIcon />
       </Stack>
     </Link>
   );

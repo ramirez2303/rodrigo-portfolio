@@ -24,7 +24,7 @@ const SpanishButton = ({ spanish }) => {
           alt="spanish flag"
           mr="12px"
         />
-        <span>Español</span>
+        <span>Español </span>
       </Stack>
     </Link>
   );

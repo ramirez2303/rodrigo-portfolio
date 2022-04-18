@@ -23,7 +23,7 @@ import jsIcon from "../Spanish/image/javascript-svgrepo-com.svg";
 import gitIcon from "../Spanish/image/git-svgrepo-com.svg";
 import reactIcon from "../Spanish/image/react-svgrepo-com.svg";
 import avatar from "../Spanish/image/avatar.png";
-import curriculum from "../Spanish/Profile.pdf"
+import curriculum from "../Spanish/CurriculumRodrigoRamirez.pdf";
 
 const Home = () => {
   return (

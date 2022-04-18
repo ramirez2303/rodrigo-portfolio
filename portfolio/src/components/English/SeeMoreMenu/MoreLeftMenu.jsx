@@ -26,11 +26,6 @@ import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import React, { useEffect, useState } from "react";
 
-import spanish from "../Menu/MenuAssets/es.svg";
-import english from "../Menu/MenuAssets/gb.svg";
-import SpanishButton from "../LanguageLinks/SpanishButton";
-import EnglishButton from "../LanguageLinks/EnglishButton";
-
 const MoreLeftMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();

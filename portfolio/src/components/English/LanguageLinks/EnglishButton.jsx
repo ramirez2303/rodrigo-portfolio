@@ -2,6 +2,7 @@ import React from "react";
 
 import { Image, Stack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { ViewIcon } from "@chakra-ui/icons";
 
 const EnglishButton = ({ english }) => {
   const scrollTop = () => {
@@ -25,6 +26,7 @@ const EnglishButton = ({ english }) => {
           mr="12px"
         />
         <span>English</span>
+        <ViewIcon />
       </Stack>
     </Link>
   );

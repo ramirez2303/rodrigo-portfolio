@@ -26,9 +26,6 @@ import { HamburgerIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import React, { useEffect, useState } from "react";
 
-import spanish from "../Menu/MenuAssets/es.svg";
-import english from "../Menu/MenuAssets/gb.svg";
-
 const MoreLeftMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -126,33 +123,6 @@ const MoreLeftMenu = () => {
                 alignItems="center"
                 spacing={8}
               >
-                <Menu>
-                  <MenuButton as={Button} size="sm">
-                    Idioma <ChevronDownIcon />
-                  </MenuButton>
-                  <MenuList>
-                    <MenuItem minH="48px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={spanish}
-                        alt="spanish flag"
-                        mr="12px"
-                      />
-                      <span>Español</span>
-                    </MenuItem>
-                    <MenuItem minH="40px">
-                      <Image
-                        boxSize="2rem"
-                        borderRadius="full"
-                        src={english}
-                        alt="Gb flag"
-                        mr="12px"
-                      />
-                      <span>English</span>
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
               </Stack>
             </Stack>
           </DrawerBody>

@@ -14,8 +14,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import SpanishButton from "../Spanish/LanguageLinks/SpanishButton";
-import EnglishButton from "../Spanish/LanguageLinks/EnglishButton";
+import SpanishButton from "../English/LanguageLinks/SpanishButton";
+import EnglishButton from "../English/LanguageLinks/EnglishButton";
 
 import spanish from "../Spanish/image/es.svg";
 import english from "../Spanish/image/gb.svg";
