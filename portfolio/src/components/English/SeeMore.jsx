@@ -27,6 +27,8 @@ import project3 from "../Spanish/image/coming-soon.jpeg";
 import project4 from "../Spanish/image/chat.png";
 import project5 from "../Spanish/image/huddle.png";
 import project6 from "../Spanish/image/order.png";
+import project7 from "../Spanish/image/ecommerceFront.jpeg";
+import project8 from "../Spanish/image/advice.jpeg";
 import { Link } from "react-router-dom";
 
 const SeeMore = () => {
@@ -116,6 +118,62 @@ const SeeMore = () => {
                   >
                     <span>
                       <SiJavascript size="36px" />
+                    </span>
+                  </Tooltip>
+                </Stack>
+              }
+            />
+            <ProjectCard
+              id="project7"
+              title="E-commerce Product Page"
+              image={project7}
+              alt="Project 7 Image - E-commerce Product Page"
+              text={`A product page of a fake e-commerce, with a carousel and a functional cart, based on the challenge of the Frontend Mentor page`}
+              deploy="https://fake-e-commerce-product-page.vercel.app/"
+              repo="https://github.com/ramirez2303/fake-e-commerce-product-page"
+              icon={
+                <Stack direction="row" spacing={4} _dark>
+                  <Tooltip hasArrow label="ReactJS" bg="gray.300" color="black">
+                    <span>
+                      <FaReact size="36px" />
+                    </span>
+                  </Tooltip>
+                  <Tooltip
+                    hasArrow
+                    label="ChakraUI"
+                    bg="gray.300"
+                    color="black"
+                  >
+                    <span>
+                      <SiChakraui size="36px" />
+                    </span>
+                  </Tooltip>
+                </Stack>
+              }
+            />
+            <ProjectCard
+              id="project8"
+              title="Advice generator - API"
+              image={project8}
+              alt="Project 8 Image - Advice generator"
+              text={`This is a page with a advice generator, connected to an API provided by Frontend Mentor, based on the challenge on this page.`}
+              deploy="https://advice-generator-frontendmentor-challenge.vercel.app/"
+              repo="https://github.com/ramirez2303/advice-generator-frontendmentor-challenge"
+              icon={
+                <Stack direction="row" spacing={4} _dark>
+                  <Tooltip hasArrow label="ReactJS" bg="gray.300" color="black">
+                    <span>
+                      <FaReact size="36px" />
+                    </span>
+                  </Tooltip>
+                  <Tooltip
+                    hasArrow
+                    label="ChakraUI"
+                    bg="gray.300"
+                    color="black"
+                  >
+                    <span>
+                      <SiChakraui size="36px" />
                     </span>
                   </Tooltip>
                 </Stack>
