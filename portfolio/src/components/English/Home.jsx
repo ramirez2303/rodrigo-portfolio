@@ -22,7 +22,7 @@ import cssIcon from "../Spanish/image/css-3-svgrepo-com.svg";
 import jsIcon from "../Spanish/image/javascript-svgrepo-com.svg";
 import gitIcon from "../Spanish/image/git-svgrepo-com.svg";
 import reactIcon from "../Spanish/image/react-svgrepo-com.svg";
-import avatar from "../Spanish/image/avatar.png";
+import avatar from "../Spanish/image/avatar.jpeg";
 import curriculum from "../Spanish/CurriculumRodrigoRamirez.pdf";
 
 const Home = () => {
@@ -68,7 +68,13 @@ const Home = () => {
             </Stack>
           </Stack>
           <Stack>
-            <Image src={avatar} width="230px" borderRadius="full" />
+            <Image
+              src={avatar}
+              width="230px"
+              h="230px"
+              objectFit="cover"
+              borderRadius="full"
+            />
           </Stack>
         </Flex>
         <Stack spacing={12}>
